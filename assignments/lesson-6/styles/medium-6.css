@@ -17,12 +17,36 @@
     nav ul li {
         display: inline-block;
     }
-
+    .weather-summary {
+        display:grid;
+        width: 100%;
+        }
+    .current {
+        width: 100%;
+        }
+    .conditions {
+     width: 100%;
+    }
+    section.forecast h3 {
+        border: 1px solid black;
+        background: lightgray;
+        text-align: center;
+        padding: 3px;
+        margin: 0 auto;
+        
+    }
+    
     table, th, td {
         border: 1px solid black;
-        background: gray;
+        background: lightgray;
         text-align: center;
-        
+        margin: 0 auto;
+        padding: 3px;
+        border-collapse: collapse;
+    }
+    table {
+        width: 100%;
+    }    
         
         main article img {
         width: 250px;

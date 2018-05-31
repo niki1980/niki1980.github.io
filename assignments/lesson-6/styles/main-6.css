@@ -1,0 +1,119 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Source Sans Pro Regular", Ubuntu, sans-serif;
+}
+
+header,
+footer {
+    background-color: #2f4858;
+    color: #fff;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+header,
+nav,
+main,
+footer {
+
+    max-width: 767px;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+header img {
+    width:50%;
+    float: left;
+    margin: 7px;
+   }
+
+header .subheading {
+    font-size:1.3rem;
+    color: indianred;
+    }
+
+nav {
+    background-color: #427aa1;
+    text-align: center;
+
+}
+
+nav button {}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+nav ul li.active a {}
+
+nav ul li a:hover {
+    background-color: #f6ae2d;
+    color: #2f4858;
+
+}
+
+main {
+    color: dimgray;
+}
+
+main h2 {
+    color: #427aa1;
+}
+
+main figure {
+    margin: 0 0 .2rem 2%;
+    width: 96%;
+}
+
+main figure img {}
+
+main article {
+    padding: .25rem;
+}
+
+main article img {
+    width: 95%;
+    height: auto;
+}
+
+
+footer {
+    font-size: 10px;
+}
+
+
+/* class selectors*/
+
+.forecast {
+    display: none;
+}
