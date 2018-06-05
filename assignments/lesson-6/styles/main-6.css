@@ -18,7 +18,7 @@ footer {
     flex-flow: column;
     text-align: center;
     align-items: center;
-    justify-content: center;
+   justify-content: center;
     padding: 10px;
 }
 
@@ -36,21 +36,17 @@ header h1 {
     font-size: 2rem;
 }
 
-header img {
-    display: block;
+header figure.logo {
     float: left;
-    height: 70px;
-    overflow: hidden;
-    padding: 10px;
-    width: auto;
-    margin: 20px;
-    
-   }
+    max-width: 100%
+        margin: 0 auto;
+}
 
 header .subheading {
-    font-size:1.3rem;
+    font-size: 1.3rem;
     color: indianred;
-    }
+}
+
 
 nav {
     background-color: #427aa1;
@@ -63,8 +59,8 @@ nav button {
     background-color: transparent;
     border: none;
     font-size: 1.6rem;
-    color:#fff;
-    
+    color: #fff;
+
 }
 
 nav ul {
@@ -91,43 +87,47 @@ nav ul li.active a {}
 
 nav ul li a:hover {
     background-color: #f6ae2d;
-    color: #2f4858;}
+    color: #2f4858;
+}
 
-nav ul.hide {display: none;}
+nav ul.hide {
+    display: none;
+}
 
 main {
     color: dimgray;
 }
-.banner {
-    width: 100%;
-}
+
 main h2 {
     color: #427aa1;
+    padding: 10px;
 }
+
 .flex-box {
-    display:flex;
-    flex-direction:row;
-}
-.highlow {
-   
-}
-.current {
-   
-}
-.conditions {
-    
-}
-main figure {
-    margin: 0 0 .2rem 2%;
-    width: 96%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
 }
 
-picture img{
+.highlow {}
+
+.current {}
+
+.conditions {}
+
+main figure.franklinphoto {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+main figure.franklinphoto img {
+    width: 100%;
+}
+
+picture img {
     width: 20px;
-            
-}
 
-main figure img {}
+}
 
 main article {
     padding: .25rem;
@@ -136,6 +136,7 @@ main article {
 main article img {
     width: 95%;
     height: auto;
+   
 }
 
 
@@ -149,9 +150,9 @@ footer {
 .forecast {
     display: none;
 }
-.clearfix: after {
+
+.clearfix:after {
     content: "";
     display: table;
     clear: both;
-}
 }
