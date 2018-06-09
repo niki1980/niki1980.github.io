@@ -22,12 +22,22 @@ header {
 
 }
 
-footer {
+.contact {
+    background-color: #427aa1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.footer-bar {
     background-color: #2f4858;
     color: #fff;
     display: flex;
     flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center;
     padding: 10px;
@@ -38,7 +48,7 @@ nav,
 main,
 footer {
 
-    max-width: 767px;
+    max-width: 960px;
     margin: 0 auto;
 
 }
@@ -122,6 +132,7 @@ main h2 {
     padding: 10px;
 }
 
+
 .highlow {
     padding: 0 0 0 10px;
 }
@@ -155,9 +166,6 @@ main article img {
 }
 
 
-footer {
-    font-size: 10px;
-}
 
 
 /* class selectors*/
@@ -166,14 +174,16 @@ footer {
     display: none;
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
+.clearfix {
     clear: both;
 }
 
 .galleryimages {
-    width: 100px;
-    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
 }
+
+.galleryimages img {
+    max-width: 100%;
 }

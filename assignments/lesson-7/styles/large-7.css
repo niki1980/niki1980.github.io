@@ -4,9 +4,9 @@
         font-size: larger;
 
     }
-     .gallery-image {
-        display: grid;
+     .galleryimages {
+
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 10px;
+
 
 }

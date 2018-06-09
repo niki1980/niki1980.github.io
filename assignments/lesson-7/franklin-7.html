@@ -57,10 +57,8 @@
                 <p>Low: <span id="lowtemp">69</span>&deg;F</p>
             </div>
             <div class="current">
-                Sunny
-                <picture>
-                    <img src="images/sun.png" alt="photo of sun">
-                </picture>
+                <p>Sunny <img src="images/sun.png" alt="photo of sun"></p>
+                
                 <p>Windchill Factor: <span id="windchillfactor"></span>&deg;F</p>
             </div>
             <div class="conditions">
@@ -114,13 +112,14 @@
 
     </main>
 
-    <footer>
-        <section class="contact">
-            Weather Guide 898.444.2222 456 Main St. Franklin, US 12345 Google Map
-        </section>
-        <section class="footer-bar">&copy;2018 | All Rights Reserved | Weather Guide | <span id="currentDate"></span>
-
-        </section>
+    <footer class="clearfix">
+        <p class="contact">
+            Weather Guide<br>
+            898.444.2222<br>
+            456 Main St. Franklin, US 12345<br>
+        </p>
+        <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather Guide | <span id="currentDate"></span>
+        </p>
     </footer>
     <script src="scripts/windchill.js"></script>
     <script src="scripts/scripts.js"></script>
