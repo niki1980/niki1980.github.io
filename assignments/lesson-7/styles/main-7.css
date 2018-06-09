@@ -15,7 +15,7 @@ footer {
     background-color: #2f4858;
     color: #fff;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
     align-items: center;
    justify-content: center;
