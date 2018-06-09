@@ -1,5 +1,5 @@
 @media only screen and (min-width:37.5em) {
-  
+
     nav button {
         display: none;
     }
@@ -11,52 +11,56 @@
     nav ul.hide {
         display: flex;
     }
-    
+
     nav ul li {
         flex: 1 1 100%;
     }
-    
+
     .weather-summary {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    
+
     .weather-summary h2 {
         grid-column: 1 / span 3;
         grid-row: 1;
     }
-    
-    .highlow, .current, .conditions {
-        background-color:#eee;
+
+    .highlow,
+    .current,
+    .conditions {
+        background-color: #eee;
         align-items: center;
         justify-content: center;
     }
-    
+
     .highlow {
-        grid-column:1;
-        grid-row:2;
+        grid-column: 1;
+        grid-row: 2;
     }
-    
+
     .current {
-        grid-column:2;
-        grid-row:2;
+        grid-column: 2;
+        grid-row: 2;
     }
-    
+
     .conditions {
         grid-column: 3;
-        grid-row:2;
+        grid-row: 2;
     }
-    
+
     section.forecast h3 {
         border: 1px solid black;
         background: lightgray;
         text-align: center;
         padding: 3px;
         margin: 0 auto;
-        
+
     }
-    
-    table, th, td {
+
+    table,
+    th,
+    td {
         border: 1px solid black;
         background: lightgray;
         text-align: center;
@@ -66,13 +70,19 @@
     }
     table {
         width: 100%;
-    }    
-        
-        main article img {
+    }
+
+    main article img {
         width: 250px;
         float: right;
         margin: 7px;
         box-shadow: 3px 3px 3px #bbb;
 
     }
-}
+ .galleryimages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+     
+    }
+
