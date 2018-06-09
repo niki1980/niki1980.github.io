@@ -172,11 +172,8 @@ footer {
     clear: both;
 }
 
-/* gallery page */
-
-/*.gallery-image {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap:10px;*/
-
+.galleryimages {
+    width: 100px;
+    height: auto;
+}
 }
