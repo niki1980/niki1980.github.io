@@ -18,7 +18,7 @@ footer {
     flex-direction: column;
     text-align: center;
     align-items: center;
-   justify-content: center;
+    justify-content: center;
     padding: 10px;
 }
 
@@ -145,7 +145,7 @@ main article {
 main article img {
     width: 95%;
     height: auto;
-   
+
 }
 
 
@@ -164,4 +164,11 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+/* gallery page */
+
+.galleryimages {
+    display: grid;
+    grid-template-rows: auto;
 }
