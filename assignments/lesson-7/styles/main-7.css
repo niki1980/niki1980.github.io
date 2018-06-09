@@ -110,13 +110,15 @@ main h2 {
     padding: 10px;
 }
 
-.flex-box {
+/*.flex-box {
     display: flex;
     flex-direction: row;
     padding: 10px;
-}
+}*/
 
-.highlow {}
+.highlow {
+    padding: 0 0 0 10px;
+}
 
 .current {}
 
