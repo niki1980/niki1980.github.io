@@ -4,10 +4,10 @@
         font-size: larger;
 
     }
-     .galleryimages {
+    .galleryimages {
 
         grid-template-columns: 1fr 1fr 1fr;
 
 
-}
+    }
 }
