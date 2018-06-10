@@ -53,15 +53,20 @@ footer {
 
 }
 
+.footer-bar {
+    margin: 0;
+    font-size: 11px;
+}
+
 header h1 {
     font-size: 2rem;
 }
 
-.logo {
+/*.logo {
     flex: 0 1 128px;
     text-align: center;
 
-}
+} */
 
 .headertext {
     flex: auto;
@@ -124,22 +129,42 @@ nav ul.hide {
 }
 
 main {
-    color: dimgray;
+    color: dimgray
 }
 
-main h2 {
+main h2,
+h3 {
     color: #427aa1;
-    padding: 10px;
+    padding-left: 1.2rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
 }
 
-
-.highlow {
-    padding: 0 0 0 10px;
+.weather-summary {
+    display: grid;
+    grid-column-gap: 0px;
+    padding-bottom: 20px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
 }
 
-.current {}
+.highlow,
+.current,
+.conditions {
+    background-color: #eee;
+    align-items: center;
+    justify-content: center;
+}
 
-.conditions {}
+.current img {
+    width: 25%;
+    height: auto;
+    margin: 2rem, 0, 0;
+}
+
+.weather-summary p {}
+
 
 main figure.franklinphoto {
     max-width: 100%;
@@ -150,11 +175,6 @@ main figure.franklinphoto img {
     width: 100%;
 }
 
-picture img {
-    width: 20px;
-
-}
-
 main article {
     padding: .25rem;
 }
@@ -163,6 +183,10 @@ main article img {
     width: 95%;
     height: auto;
 
+}
+
+.contact {
+    text-align: center;
 }
 
 
@@ -181,9 +205,17 @@ main article img {
 .galleryimages {
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 10px;
 }
 
 .galleryimages img {
     max-width: 100%;
+    filter: drop-shadow(8px 8px 2px gray)
+}
+
+figcaption {
+    margin-top: 4px;
+    padding: 5px;
+    font-size: 80%;
+    text-align: center;
+
 }

@@ -33,7 +33,7 @@
         <button onclick="toggleMenu()">&#9776;</button>
         <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Franklin</a></li>
+            <li><a href="franklin-7.html">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
             <li><a href="#">Storm Center</a></li>
@@ -49,15 +49,15 @@
                      images/franklin-medium-800.6.jpg 500w,
                      images/franklin-large-1200.6.jpg 800w">
         </figure>
-
-        <section class="weather-summary">
             <h3>Weather Summary</h3>
+        <div class="weather-summary">
+            
             <div class="highlow">
                 <p>High: <span id="hightemp">80</span>&deg;F</p>
                 <p>Low: <span id="lowtemp">69</span>&deg;F</p>
             </div>
             <div class="current">
-                <p>Sunny <img src="images/sun.png" alt="photo of sun"></p>
+                <p>Sunny <img src="images/sun-crop.png" alt="photo of sun"></p>
                 
                 <p>Windchill Factor: <span id="windchillfactor"></span>&deg;F</p>
             </div>
@@ -66,7 +66,7 @@
                 <p>Wind Speed: <span id="windspeed">14</span> mph</p>
             </div>
             
-        </section>
+        </div>
 
         <section class="forecast">
             <h3>Ten Day Forecast</h3>
@@ -116,9 +116,9 @@
         <p class="contact">
             Weather Guide<br>
             898.444.2222<br>
-            456 Main St. Franklin, US 12345<br>
+            456 Main St. -  Cascade, ID 12345<br>
         </p>
-        <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather Guide | <span id="currentDate"></span>
+        <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather Guide <span id="currentDate"></span>
         </p>
     </footer>
     <script src="scripts/windchill.js"></script>
