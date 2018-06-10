@@ -28,6 +28,7 @@ header {
     justify-content: center;
     padding: 10px;
     margin-bottom: 0;
+    font-size: 14px;
 }
 
 .footer-bar {
@@ -38,6 +39,8 @@ header {
     align-items: center;
     justify-content: center;
     padding: 10px;
+    margin: 0;
+    font-size: 12px;
 }
 
 header,
@@ -48,11 +51,6 @@ footer {
     max-width: 960px;
     margin: 0 auto;
 
-}
-
-.footer-bar {
-    margin: 0;
-    font-size: 11px;
 }
 
 header h1 {
