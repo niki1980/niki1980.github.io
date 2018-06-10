@@ -16,7 +16,6 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-content: left;
     padding: 1rem;
 }
 
@@ -71,7 +70,6 @@ header h1 {
     flex: auto;
     display: flex;
     flex-direction: column;
-    align-items: left;
     justify-content: center;
 }
 
@@ -141,7 +139,6 @@ h3 {
     display: grid;
     grid-column-gap: 0px;
     padding-bottom: 20px;
-    justify-content: left;
     text-align: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -156,9 +153,8 @@ h3 {
 }
 
 .current img {
-    width: 25%;
+    width: 25px;
     height: auto;
-    margin: 2rem, 0, 0;
 }
 
 .town-article {
@@ -183,7 +179,7 @@ main article {
 main article img {
     width: 95%;
     height: auto;
-   margin-left: .5rem;
+    margin-left: .5rem;
 
 }
 
