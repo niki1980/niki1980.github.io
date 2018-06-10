@@ -50,7 +50,7 @@
         border: 1px solid black;
         background: lightgray;
         text-align: center;
-        padding: 3px;
+        padding: 4;
         margin: 0 auto;
 
     }
@@ -62,7 +62,7 @@
         background: lightgray;
         text-align: center;
         margin: 0px auto;
-        padding: 3px;
+        padding: 5px;
         border-collapse: collapse;
     }
     table {
