@@ -1,12 +1,12 @@
 html {
-    font-family: Ubuntu, sans-serif;
+    font-family: "Ubuntu", sans-serif;
 }
 
 table {
     border-collapse: collapse;
     border: 2px solid rgb(200, 200, 200);
     letter-spacing: 1px;
-    font-size: 1rem;
+    font-size: .95rem;
     box-shadow: 7px 7px 15px #628ca6;
 }
 
@@ -20,13 +20,13 @@ thead th {
 td,
 th {
     border: 1px solid rgb(190, 190, 190);
-    padding: 10px 20px;
+    padding: 7px 4px;
 }
 
 th {
     background-color: #628ca6;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 
 }
 
