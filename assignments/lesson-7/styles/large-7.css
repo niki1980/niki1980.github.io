@@ -5,9 +5,10 @@
 
     }
     .galleryimages {
-
         grid-template-columns: 1fr 1fr 1fr;
+    }
 
-
+    .galleryimages img:hover {
+        box-shadow: 5px 5px 10px gray;
     }
 }
