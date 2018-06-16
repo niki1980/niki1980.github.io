@@ -265,7 +265,7 @@ form label.entry input, form label.entry select {
 }
 form label.danger1 {
     font-size: 1.2rem;
-    ;
+    font-weight: bold;
     color: indianred;
 }
 
