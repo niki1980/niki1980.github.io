@@ -43,11 +43,61 @@
 
     <main>
 
-        
+        <form method="get" action="thanks.html">
+            <h2>Report Unusual Storm/Weather</h2>
+            <fieldset>
+                <legend>My Information</legend>
+                <label class="entry">*Full Name <input type="text" name="full name" pattern="[A-Za-z].{5,}"title="must be at least 5 characters" required> </label>
+                <label class="entry">Email <input type="email" name="email" placeholder="myemail@outlook.com"></label>
+                <label class="entry">*Phone <input type="tel" name="phone" placeholder="1231231234" required> </label>
+                <label class="entry">*Zip Code <input type="number" name="zip code" required> </label>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>My Storm Report</legend>
+                <label class="entry">Storm Date <input type="date"></label>
+                <label class="entry">Storm Region 
+                <select name="subject">
+                    <option value="" disabled selected>Select Region &#9662;</option>
+                    <option value="franklin" >Franklin</option>
+                    <option value="greenville" >Greenville</option>
+                    <option value="Springfield" >Springfield</option>
+                        </select>
+                        </label>
+                <label class="danger1">Are you in Danger?</label>
+                <label class="danger"><input type="radio" name="danger" value="beginner"> Yes</label>
+                <label class="danger"><input type="radio" name="danger" value="intermediate"> Maybe</label>
+                <label class="danger"><input type="radio" name="danger" value="advanced"> No</label>
+
+                <label class="report">Choose a Storm Type</label>
+                <input list="storms" id="myStorm" name="myStorm" />
+                <datalist id="storms"> 
+                    <option value="Flash Flood"></option>
+                    <option value="Hail"></option>
+                    <option value="Hurricane"></option>
+                    <option value="Thunderstorm"></option>
+                    <option value="Tornado"></option>
+                    </datalist>
+
+                <label class="report">Storm Severity</label>
+                <label for="rating">Rating (1 to 10)</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <span id="ratingvalue">5</span><br>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Information or Comments</legend>
+
+                <label class="entry">Tell us more about your storm <input type="textarea" name="text"></label>
+            </fieldset>
+            <input type="submit" value="Report My Storm" class="submitBtn">
+
+        </form>
+
+
 
     </main>
-
-    <footer class="clearfix">
+ <footer class="clearfix">
         <p class="contact">
             Weather Guide<br> 898.444.2222
             <br> 456 Main St. - Cascade, ID 12345<br>
@@ -55,7 +105,6 @@
         <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather Guide <span id="currentDate"></span>
         </p>
     </footer>
-    <script src="scripts/windchill.js"></script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/currentDate.js"></script>
 </body>

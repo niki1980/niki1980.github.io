@@ -11,4 +11,8 @@
     .galleryimages img:hover {
         box-shadow: 5px 5px 10px gray;
     }
+    
+    form label.report {
+        padding: .4rem 0;
+    }
 }
