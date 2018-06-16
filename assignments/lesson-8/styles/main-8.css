@@ -246,7 +246,7 @@ form legend {
 }
 form label.entry {
     display: block;
-    padding; 1.2rem;
+    padding: 1.2rem;
     color: indianred;
     font-size: 1.2rem;
 }
@@ -271,7 +271,7 @@ form label.danger1 {
 
 form label.report {
     display:block;
-    padding: .75;
+    padding: .75rem;
     color: indianred;
     font-size: 1.2rem;
 }
@@ -314,7 +314,7 @@ input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 8.4px;
   cursor: pointer;
-  animate: 0.2s;
+ 
   
   background: #427aa1;
   border-radius: 1.3px;
@@ -335,7 +335,7 @@ input[type=range]:focus::-webkit-slider-runnable-track {
   background: #367ebd;
 }
 
-}
+
 input[type=range]:focus::-ms-fill-lower {
   background: #3071a9;
 }

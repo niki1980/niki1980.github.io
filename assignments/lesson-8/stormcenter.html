@@ -47,7 +47,7 @@
             <h2>Report Unusual Storm/Weather</h2>
             <fieldset>
                 <legend>My Information</legend>
-                <label class="entry">*Full Name <input type="text" name="full name" pattern="[A-Za-z].{5,}"title="must be at least 5 characters" required> </label>
+                <label class="entry">*Full Name <input type="text" name="full name" pattern="[A-Za-z].{5,}" title="must be at least 5 characters" required> </label>
                 <label class="entry">Email <input type="email" name="email" placeholder="myemail@outlook.com"></label>
                 <label class="entry">*Phone <input type="tel" name="phone" placeholder="1231231234" required> </label>
                 <label class="entry">*Zip Code <input type="number" name="zip code" required> </label>
@@ -88,16 +88,15 @@
             <fieldset>
                 <legend>Additional Information or Comments</legend>
 
-                <label class="entry">Tell us more about your storm <input type="textarea" name="text"></label>
+                <textarea name="textarea"
+                          rows="10" cols="50">Tell us more about your storm.</textarea>
             </fieldset>
             <input type="submit" value="Report My Storm" class="submitBtn">
 
         </form>
 
-
-
     </main>
- <footer class="clearfix">
+    <footer class="clearfix">
         <p class="contact">
             Weather Guide<br> 898.444.2222
             <br> 456 Main St. - Cascade, ID 12345<br>
