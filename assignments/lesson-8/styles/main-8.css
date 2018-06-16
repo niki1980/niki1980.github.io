@@ -246,7 +246,7 @@ form legend {
 }
 form label.entry {
     display: block;
-    padding: 1.2rem;
+    padding: .75rem;
     color: indianred;
     font-size: 1.2rem;
 }
