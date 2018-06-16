@@ -1,0 +1,14 @@
+@media only screen and (min-width:64em) {
+
+    nav ul li a {
+        font-size: larger;
+
+    }
+    .galleryimages {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .galleryimages img:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+}

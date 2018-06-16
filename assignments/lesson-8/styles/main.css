@@ -1,0 +1,221 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Open Sans', Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background-color: #2f4858;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.contact {
+    background-color: #427aa1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.footer-bar {
+    background-color: #2f4858;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    font-size: 12px;
+}
+
+header,
+nav,
+main,
+footer {
+
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+header h1 {
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.logo {
+    flex: 0 1 128px;
+    margin: auto;
+    padding-right: 1.2rem;
+}
+.logo img {
+    width: 100%;
+}
+
+.headertext {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+.subheading {
+    font-size: 1rem;
+    color: indianred;
+}
+
+
+nav {
+    background-color: #427aa1;
+    text-align: center;
+
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+nav ul li.active a {}
+
+nav ul li a:hover {
+    background-color: #f6ae2d;
+    color: #2f4858;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    color: dimgray
+}
+
+main h2,
+h3 {
+    color: #427aa1;
+    text-align: center;
+}
+
+.weather-summary {
+    margin: 1.3em;
+}
+
+.weather-summary {
+    display: grid;
+    grid-column-gap: 0px;
+    padding-bottom: 10px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    background: #427aa1;
+}
+
+.highlow,
+.current,
+.conditions {
+    background-color: #eee;
+    align-items: center;
+    justify-content: center;
+}
+
+.current img {
+    width: 60px;
+    height: auto;
+}
+
+.town-article {
+    padding: 1.2rem;
+}
+
+
+main figure.franklinphoto {
+    max-width: 100%;
+    margin: 1.3rem;
+}
+
+main figure.franklinphoto img {
+    width: 100%;
+
+}
+
+main article {
+    padding: .25rem;
+}
+
+main article img {
+    width: 95%;
+    height: auto;
+    margin-left: .5rem;
+
+}
+
+.contact {
+    text-align: center;
+}
+
+/* class selectors*/
+
+.forecast {
+    display: none;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.galleryimages {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.galleryimages img {
+    max-width: 100%;
+    }
+
+figcaption {
+    margin-top: 4px;
+    padding: 5px;
+    font-size: 80%;
+    text-align: center;
+
+}
