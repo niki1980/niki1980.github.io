@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- Niki Johnson CIT230 Tri-City Weather Home Page -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather Guide Home Page for Tri-City Weather</title>
+    <meta name="description" content="Contains data on weather in Tri-Cities">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <figure class="logo">
+            <img src="images/weather-logo-small.png" alt="logo for Weather Guide site">
+        </figure>
+        <div class="headertext">
+            <h1>Weather Guide</h1>
+            <div class="subheading">Your safest weather experience!</div>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin-9.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="mainpage">
+            <h2>Weather in the Tri-Cities</h2>
+            <article>
+                <img src="images/sky.jpg" alt="blue sky and clouds with sun rays shining through">
+
+                <div class="weatherstory">
+                    <h2>Weather Story</h2>
+                </div>
+
+            </article>
+            <div class="gridfrontpg">
+                <article>
+                    <img src="images/franklin-index.jpg" alt="landscape of Franklin city">
+                    <div class="data">
+                        <h2>Franklin</h2>
+
+                        <p>Town Motto:</p>
+                        <p><span id="frank-motto"></span></p>
+                        <p>Year Founded:</p>
+                        <p><span id="frank-founded"></span></p>
+                        <p>Population:</p>
+                        <p><span id="frank-pop"></span></p>
+                        <p>Annual Rainfall:</p>
+                        <p><span id="frank-rain"></span></p>
+                    </div>
+                </article>
+
+                <article>
+                    <img src="images/greenville.jpg" alt="hiker sitting at lake on breezy sunny day">
+                    <div class="data">
+                        <h2>Greenville</h2>
+                        <p>Town Motto:</p>
+                        <p><span id="green-motto"></span></p>
+                        <p>Year Founded:</p>
+                        <p><span id="green-founded"></span></p>
+                        <p>Population:</p>
+                        <p><span id="green-pop"></span></p>
+                        <p>Annual Rainfall:</p>
+                        <p><span id="green-rain"></span></p>
+                    </div>
+                </article>
+            
+                <article>
+                    <img src="images/springfield.b.jpg" alt="geese on the shore of a lake on a sunny day">
+                    <div class="data">
+                        <h2>Springfield</h2>
+                       <p>Town Motto:</p>
+                        <p><span id="spring-motto"></span></p>
+                        <p>Year Founded:</p>
+                        <p><span id="spring-founded"></span></p>
+                        <p>Population:</p>
+                        <p><span id="spring-pop"></span></p>
+                        <p>Annual Rainfall:</p>
+                        <p><span id="spring-rain"></span></p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="clearfix">
+        <p class="contact">
+            Weather Guide<br> 898.444.2222
+            <br> 456 Main St. - Cascade, ID 12345<br>
+        </p>
+        <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather Guide <span id="currentDate"></span>
+            <br> Weather data provided by: <a href="http://www.OpenWeatherMap.org">OpenWeatherMap.org</a>
+        </p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/town-data.js"></script>
+</body>
+
+</html>

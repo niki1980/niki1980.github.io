@@ -1,0 +1,27 @@
+@media only screen and (min-width:64em) {
+
+    nav ul li a {
+        font-size: larger;
+
+    }
+    .galleryimages {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .galleryimages img:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+    
+    form label.report {
+        padding: .4rem 0;
+    }
+    .gridfrontpg {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-auto-rows: 1fr;
+    }
+    .gridfrontpg article {
+        flex-direction: column;
+    }
+    
+        
+}

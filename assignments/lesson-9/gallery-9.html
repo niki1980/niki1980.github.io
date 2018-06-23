@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- Niki Johnson CIT230 Tri-City Gallery Page -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Photo Gallery for Tri-City Weather</title>
+    <meta name="description" content="Contains weather images from Tri-City areas">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main-9.css">
+    <link rel="stylesheet" href="styles/medium-9.css">
+    <link rel="stylesheet" href="styles/large-9.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <figure class="logo">
+            <img src="images/weather-logo-small.png" alt="logo for Weather Guide site">
+        </figure>
+        <div class="headertext">
+            <h1>Weather Guide</h1>
+            <div class="subheading">Your safest weather experience!</div>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin-9.html">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-9.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Tri-City Weather Gallery</h2>
+
+        <div class="galleryimages">
+            <figure>
+                <img src="images/dandelion-crop.jpg" alt="dandelion blowing in wind">
+                <figcaption>Spring breezes are sure to help Mother Nature along.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rain-coming-crop.jpg" alt="rain cloud in the distance">
+                <figcaption>Local farmers are grateful for much needed rain.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/rain-puddle-crop.jpg" alt="boy splashing in rain puddle with umbrella">
+                <figcaption>Spring rains are perfect for puddle jumping!</figcaption>
+            </figure>
+            <figure>
+                <img src="images/wind-blown-grass-crop.jpg" alt="dry grasses in field blowing in breeze">
+                <figcaption>High winds amidst drought are cause for concern among Greenville residents.</figcaption>
+            </figure>
+            <figure>
+                <img src="images/sunny-apples-crop.jpg" alt="sunny day in apple orchard">
+                <figcaption>It's a sunny day at Franklin Farms and the apples are ready to harvest!</figcaption>
+            </figure>
+            <figure>
+                <img src="images/snowstorm-crop.jpg" alt="man blowing snow with snowblower">
+                <figcaption>Here, a resident of Springfield clears the sidewalk after a winter snowstorm. </figcaption>
+            </figure>
+
+        </div>
+    </main>
+
+    <footer class="clearfix">
+        <p class="contact">
+            Weather Guide<br> 898.444.2222
+            <br> 456 Main St. - Cascade, ID 12345<br>
+        </p>
+        <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather Guide <span id="currentDate"></span>
+        </p>
+    </footer>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/currentDate.js"></script>
+
+</body>
+
+</html>
