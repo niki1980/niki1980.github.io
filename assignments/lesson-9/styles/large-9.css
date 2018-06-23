@@ -11,6 +11,13 @@
     .galleryimages img:hover {
         box-shadow: 5px 5px 10px gray;
     }
+     main article img {
+        width: 50%;
+        float: right;
+        margin: 10px 10px 30px;
+                box-shadow: 3px 3px 3px #bbb;
+
+    }
     
     form label.report {
         padding: .4rem 0;
