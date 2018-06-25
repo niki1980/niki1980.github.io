@@ -44,6 +44,7 @@ header {
 }
 
 }
+
 }
 
 header,
@@ -139,6 +140,12 @@ h3 {
     color: #427aa1;
     text-align: center;
 }
+main h2,
+    h3 {
+       text-align: center;
+        padding-bottom: .75rem;
+}
+   
 
 .weather-summary {
     margin: 1.3em;
@@ -161,6 +168,7 @@ h3 {
     align-items: center;
     justify-content: center;
 }
+
 .current {
     font-weight: bold;
 }
@@ -193,7 +201,7 @@ main article img {
     width: 95%;
     height: auto;
     margin-left: .5rem;
-   
+
 
 }
 
@@ -380,48 +388,43 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*-----------INDEX-------------*/
 
-{
-    padding: .35rem;
-}
+  
 
-.mainpage h2 {
-    text-align: center;
-}
-
-.mainpage {
-    max-width: 960px;
-    margin: .5rem auto;
-    border: 1px solid #bbb;
-    background-color: #eee;
-
-}
-
-.gridfrontpg {
+.grid-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-auto-rows: 1fr 1fr 1fr;
-
+    grid-template-rows: 1fr;
+    max-width: 100%;
+   
 }
-.gridfrontpg article {
-    display: flex;
-    flex-direction: column;
-    }
 
-.mainpage img {
+
+.grid-container img {
+    max-width: 100%;
+    max-height: auto;
+    margin: .25rem;
     border: 2px solid indianred;
-    height: 200px;
-    margin: .5rem;
-    width: auto;
-    float: none;
+    height: auto;
     box-shadow: 5px 5px 10px gray;
+    
+}
+.weather-story {
+    margin: 0 .5rem .25rem;
+    text-align: center;
 }
 
 .data {
-    background-color: #fff;
-    color: #000;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    font-size: 100%;
     text-align: center;
-    line-height: 2pt;
-    
-    
+    line-height: 4pt;
 
+}
+.data spring-motto, spring-founded {
+    color: indianred;
+}
+ 
+
+.footer-bar a:link {
+    color: #f6ae2d
 }
