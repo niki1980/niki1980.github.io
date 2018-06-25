@@ -391,13 +391,11 @@ input[type=range]:focus::-ms-fill-upper {
   
 
 .grid-container {
-    display: grid;
+    display: grid; 
     grid-template-rows: 1fr;
     max-width: 100%;
-   
+ 
 }
-
-
 .grid-container img {
     max-width: 100%;
     max-height: auto;
@@ -407,12 +405,15 @@ input[type=range]:focus::-ms-fill-upper {
     box-shadow: 5px 5px 10px gray;
     
 }
+.grid-container h2 {
+    text-align: center;
+}
 .weather-story {
-    margin: 0 .5rem .25rem;
+    margin: 0 1rem .25rem;
     text-align: center;
 }
 
-.data {
+.franklin-data, .greenville-data, .springfield-data {
     margin-left: .5rem;
     margin-right: .5rem;
     font-size: 100%;
@@ -420,8 +421,9 @@ input[type=range]:focus::-ms-fill-upper {
     line-height: 4pt;
 
 }
-.data spring-motto, spring-founded {
+.motto, .founded, .pop, .rain {
     color: indianred;
+    font-weight: bold;
 }
  
 
