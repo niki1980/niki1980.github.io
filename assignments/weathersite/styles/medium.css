@@ -36,6 +36,22 @@
         box-shadow: 3px 3px 3px #bbb;
 
     }
+    .springfieldphoto img {
+        width: 50%;
+        height: auto;
+        float: left;
+        margin: 25px 15px 15px 15px;
+        box-shadow: 3px 3px 3px #bbb;
+
+    }
+    .greenvillephoto img {
+        width: 50%;
+        height: auto;
+        float: left;
+        margin: 25px 15px 15px 15px;
+        box-shadow: 3px 3px 3px #bbb;
+
+    }
     .weather-summary {
         grid-template-columns: 1fr;
         line-height: .75rem;

@@ -20,6 +20,22 @@
         box-shadow: 3px 3px 3px #bbb;
 
     }
+    .greenvillephoto img {
+        width: 100%;
+        margin: 15px auto;
+        height: auto;
+        float: none;
+        box-shadow: 3px 3px 3px #bbb;
+
+    }
+    .springfieldphoto img {
+        width: 100%;
+        margin: 15px auto;
+        height: auto;
+        float: none;
+        box-shadow: 3px 3px 3px #bbb;
+
+    }
     .weather-summary {
         display: grid;
         grid-column-gap: 0px;
