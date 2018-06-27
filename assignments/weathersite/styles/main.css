@@ -241,7 +241,7 @@ main article img {
 .galleryimages {
     display: grid;
     grid-template-columns: 1fr;
-}
+ }
 
 .galleryimages img {
     max-width: 100%;

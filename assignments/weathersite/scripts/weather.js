@@ -22,13 +22,13 @@ springRequest.open('GET', townURL, true);
 springRequest.send();
 
 springRequest.onload = function () {
-    let weatherData = JSON.parse(springRequest.responseText);
-    console.log(weatherData);
-    document.getElementById('current-temp').innerHTML = weatherData.main.temp;
-     document.getElementById('weather-desc').innerHTML = weatherData.weather[0].description;
-     document.getElementById('wind-speed').innerHTML = weatherData.wind.speed;
-     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
-    let imagesrc = 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png';
+    let weatherData1 = JSON.parse(springRequest.responseText);
+    console.log(weatherData1);
+    document.getElementById('current-temp').innerHTML = weatherData1.main.temp;
+     document.getElementById('weather-desc').innerHTML = weatherData1.weather[0].description;
+     document.getElementById('wind-speed').innerHTML = weatherData1.wind.speed;
+     document.getElementById('humidity').innerHTML = weatherData1.main.humidity;
+    let imagesrc = 'http://openweathermap.org/img/w/' + weatherData1.weather[0].icon + '.png';
     document.getElementById('weathericon').src = imagesrc;
 
 }
@@ -38,13 +38,13 @@ greenRequest.open('GET', greenURL, true);
 greenRequest.send();
 
 greenRequest.onload = function () {
-    let weatherData = JSON.parse(greenRequest.responseText);
-    console.log(weatherData);
-    document.getElementById('current-temp').innerHTML = weatherData.main.temp;
-     document.getElementById('weather-desc').innerHTML = weatherData.weather[0].description;
-     document.getElementById('wind-speed').innerHTML = weatherData.wind.speed;
-     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
-    let imagesrc = 'http://openweathermap.org/img/w/' + weatherData.weather[0].icon + '.png';
+    let weatherData2 = JSON.parse(greenRequest.responseText);
+    console.log(weatherData2);
+    document.getElementById('current-temp').innerHTML = weatherData2.main.temp;
+     document.getElementById('weather-desc').innerHTML = weatherData2.weather[0].description;
+     document.getElementById('wind-speed').innerHTML = weatherData2.wind.speed;
+     document.getElementById('humidity').innerHTML = weatherData2.main.humidity;
+    let imagesrc = 'http://openweathermap.org/img/w/' + weatherData2.weather[0].icon + '.png';
     document.getElementById('weathericon').src = imagesrc;
 
 }
