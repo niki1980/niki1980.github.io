@@ -102,8 +102,9 @@
 
     }
 
-    .galleryimages figure img {
-        grid-template-columns: 1fr 1fr;   
+    .galleryimages {
+        grid-template-columns: 1fr 1fr; 
+    
     }
     
  
