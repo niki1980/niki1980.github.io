@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <!-- Niki Johnson CIT230 Franklin Weather Page -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin Weather Page for Tri-City Weather</title>
+    <meta name="description" content="Contains current weather conditions and data on Franklin">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/weather-logo-small.png" alt="logo for Weather Guide site">
+        </div>
+        <div class="headertext">
+            <h1>Weather Guide</h1>
+            <h2 class="subheading">Your safest weather experience!</h2>
+        </div>
+    </header>
+
+    <nav>
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="franklin.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+            <figure class="franklinphoto">
+            <img src="images/franklin-small-400.jpg" alt="landscape of Franklin" sizes="50vw" srcset="images/franklin-small-400.jpg 300w,
+                     images/franklin-index.jpg 400w,
+                     images/franklin-large-1200.6.jpg 800w">
+            
+        </figure>
+         <h2>Franklin Town Information</h2>
+        <div class="weather-summary">
+
+            <div class="highlow">
+                <p>Current Temp: <span id="current-temp"></span>&deg;F</p>
+                
+            </div>
+            <div class="current">
+                <p><span id="weather-desc"></span></p>
+                <img src="" id="weathericon" alt="current weather icon from openweather.org">
+                <!--<p>Windchill Factor: <span id="windchillfactor"></span>&deg;F</p>-->
+            </div>
+            <div class="conditions">
+                <p>Humidity: <span id="humidity"></span>%</p><br>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
+            </div>
+
+        </div>
+
+        <section class="forecast">
+            <h3>Ten Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <img src="images/badweather2.jpg" alt="wind blowing palm trees">
+            <p class="town-article">
+                Record winds hit Franklin this past weekend taking residents by surprise. It's uncommon to have winds of this severity, especially at this time of year. Residents are joining forces to clean up the streets. Record winds downed trees, power lines, and littered the community with debris. As you can see, Mother Nature has decided to do a 180-degree turn bringing warmer temperatures our way for the Ten Day Forecast. For those participating in community clean-up efforts, we advise you to stay well-hydrated as you work outside for the next 2 days. While not extreme temps, the change from 65 degrees to a sudden 89 might take some acclimating. Be careful out there!
+            </p>
+        </article>
+         <!--<div class="franklin-data">
+                <h2>Franklin</h2>
+                <p class="motto">Town Motto:</p>
+                <p><span id="frank-motto"></span></p><br>
+                <p class="founded">Year Founded:</p>
+                <p><span id="frank-founded"></span></p><br>
+                <p class="pop">Population:</p>
+                <p><span id="frank-pop"></span></p><br>
+                <p class="rain">Annual Rainfall in inches:</p>
+                <p><span id="frank-rain"></span></p>
+            </div> -->
+
+    </main>
+
+    <footer "includefile="footer.html" class="clearfix> 
+    </footer>
+    
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script src="scripts/currentDate.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/town-data.js"></script>
+    <script src="scripts/include.js"></script>
+</body>
+
+</html>
