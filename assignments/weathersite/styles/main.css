@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    margin: auto;
+    
 }
 
 body {
@@ -250,14 +250,17 @@ main article img {
 
 .galleryimages {
     display: grid;
+    grid-gap: 2px;
     grid-template-columns: 1fr;
  }
 
 .galleryimages img {
-    max-width: 100%;
+    max-width: 120%;
+    
 }
 
 figcaption {
+    max-width: 100%;
     margin-top: 4px;
     padding: 5px;
     font-size: 80%;

@@ -2,10 +2,11 @@
 <html lang="en-us">
 
 <head>
+    <!-- Niki Johnson CIT230 Franklin Weather Page -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Springfield Weather Page for Tri-City Weather</title>
-    <meta name="description" content="Contains current weather conditions and data on Springfield">
+    <title>Franklin Weather Page for Tri-City Weather</title>
+    <meta name="description" content="Contains current weather conditions and data on Franklin">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -42,27 +43,27 @@
 
     <main>
 
-            <figure class="springfieldphoto">
-            <img src="images/springfield-small.jpg" alt="landscape of Springfield" sizes="50vw" srcset="images/Springfield-small-400.jpg 300w,
-                     images/springfield-index.jpg 400w,
-                     images/springfield-large.jpg 800w">
+            <figure class="franklinphoto">
+            <img src="images/franklin-small-400.jpg" alt="landscape of Franklin" sizes="50vw" srcset="images/franklin-small-400.jpg 300w,
+                     images/franklin-index.jpg 400w,
+                     images/franklin-large-1200.6.jpg 800w">
             
         </figure>
-         <h2>Springfield Town Information</h2>
+         <h2>Franklin Town Information</h2>
         <div class="weather-summary">
 
             <div class="highlow">
-                <p>Current Temp: <span id="current-temp1"></span>&deg;F</p>
+                <p>Current Temp: <span id="current-temp"></span>&deg;F</p>
                 
             </div>
             <div class="current">
-                <p><span id="weather-desc1"></span></p>
-                <img src="" id="weathericon1" alt="current weather icon from openweather.org">
+                <p><span id="weather-desc"></span></p>
+                <img src="" id="weathericon" alt="current weather icon from openweather.org">
                 <!--<p>Windchill Factor: <span id="windchillfactor"></span>&deg;F</p>-->
             </div>
             <div class="conditions">
-                <p>Humidity: <span id="humidity1"></span>%</p><br>
-                <p>Wind Speed: <span id="wind-speed1"></span> mph</p>
+                <p>Humidity: <span id="humidity"></span>%</p><br>
+                <p>Wind Speed: <span id="wind-speed"></span> mph</p>
             </div>
 
         </div>
@@ -102,29 +103,35 @@
         </section>
 
         <article>
-            <h3>Springfield is Glowing</h3>
-            <img src="images/springfield-summer.jpg" alt="sun shining through field in Springfield">
+            <h3>Franklin Breaks Record</h3>
+            <img src="images/badweather2.jpg" alt="wind blowing palm trees">
             <p class="town-article">
-                It's a beautiful time of year to live in or visit Springfield! Temperatures at sunrise are perfect for working in the fields, taking a leisurely morning stroll, or going for a bike ride. Warmer, yet comfortable afternoon temps mean harvest time is right around the corner. The town council is busy preparing for the 16th Annual Springfield Harvest Festival which is sure to draw visitors from miles around. There will be food, fun crafts for the kids, games, and more. There's no greater place to be than Springfield at this time of year. Get out there and enjoy time with your community and this beautiful weather!
+                Record winds hit Franklin this past weekend taking residents by surprise. It's uncommon to have winds of this severity, especially at this time of year. Residents are joining forces to clean up the streets. Record winds downed trees, power lines, and littered the community with debris. As you can see, Mother Nature has decided to do a 180-degree turn bringing warmer temperatures our way for the Ten Day Forecast. For those participating in community clean-up efforts, we advise you to stay well-hydrated as you work outside for the next 2 days. While not extreme temps, the change from 65 degrees to a sudden 89 might take some acclimating. Be careful out there!
             </p>
         </article>
-        
+         <!--<div class="franklin-data">
+                <h2>Franklin</h2>
+                <p class="motto">Town Motto:</p>
+                <p><span id="frank-motto"></span></p><br>
+                <p class="founded">Year Founded:</p>
+                <p><span id="frank-founded"></span></p><br>
+                <p class="pop">Population:</p>
+                <p><span id="frank-pop"></span></p><br>
+                <p class="rain">Annual Rainfall in inches:</p>
+                <p><span id="frank-rain"></span></p>
+            </div> -->
+
     </main>
 
-    <footer class="clearfix">
-        <p class="contact">
-            Weather Guide<br> 898.444.2222
-            <br> 456 Main St. - Cascade, ID 12345<br>
-        </p>
-        <p class="footer-bar">&copy;2018 | All Rights Reserved | Weather Guide <span id="currentDate"></span><br>
-       Weather data provided by: <a href="http://www.OpenWeatherMap.org">OpenWeatherMap.org</a>
-        </p>
-       
+    <footer "includefile="footer.html"> 
     </footer>
+    
+    <script src="scripts/windchill.js"></script>
     <script src="scripts/scripts.js"></script>
     <script src="scripts/currentDate.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/town-data.js"></script>
+    <script src="scripts/include.js"></script>
 </body>
 
 </html>

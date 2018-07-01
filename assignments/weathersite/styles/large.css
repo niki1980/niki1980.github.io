@@ -6,6 +6,7 @@
     }
     .galleryimages {
         grid-template-columns: 1fr 1fr 1fr;
+
     }
 
     .galleryimages img:hover {
