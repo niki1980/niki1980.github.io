@@ -40,7 +40,7 @@
         width: 60%;
         height: auto;
         float: left;
-        margin: auto;
+        margin: 25px 15px 15px 15px;
         box-shadow: 3px 3px 3px #bbb;
 
     }
@@ -107,8 +107,9 @@
         grid-auto-flow: dense;
         grid-gap: .25rem;
         justify-items: center;
-
-    }
+ 
+        }
+    
     .index-sky {
         margin-top: 4rem;
         grid-column: 1;
