@@ -29,23 +29,23 @@
         flex: 1 1 100%;
     }
     .franklinphoto img {
-        width: 50%;
+        width: 60%;
+        height: auto;
+        float: left;
+        margin: 25px 15px 15px 15px;       
+        box-shadow: 3px 3px 3px #bbb;
+
+    }
+    .springfieldphoto img {
+        width: 60%;
         height: auto;
         float: left;
         margin: auto;
         box-shadow: 3px 3px 3px #bbb;
 
     }
-    .springfieldphoto img {
-        width: 50%;
-        height: auto;
-        float: left;
-        margin: 25px 15px 15px 15px;
-        box-shadow: 3px 3px 3px #bbb;
-
-    }
     .greenvillephoto img {
-        width: 50%;
+        width: 60%;
         height: auto;
         float: left;
         margin: 25px 15px 15px 15px;
@@ -54,17 +54,10 @@
     }
     .weather-summary {
         grid-template-columns: 1fr;
-        line-height: .75rem;
         border: none;
         background: none;
     }
-    .highlow,
-    .current,
-    .conditions {
-        font-size: 18px;
-        margin-bottom: 0;
-        line-height: .95em;
-    }
+    
 
     .forecast {
         padding: .8rem;

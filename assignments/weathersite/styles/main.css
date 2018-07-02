@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-    
 }
 
 body {
@@ -131,7 +130,9 @@ nav ul li a {
     font-size: .9rem;
 }
 
-nav ul li.active a {}
+nav ul li.active a {
+    background-color: gray;
+    }
 
 nav ul li a:hover {
     background-color: #f6ae2d;
@@ -161,40 +162,26 @@ h3 {
 
 main h2 {
     padding: 1.2rem;
-}
-
-.weather-summary {
-    margin: auto;
-    padding: 1.2rem;
+    padding-bottom: 0;
 }
 
 .weather-summary {
     display: grid;
-    grid-column-gap: 0px;
     text-align: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     background: #E6F3F7;
-    padding: .5rem;
     margin: 0 .75rem;
     border: 3px solid #f6ae2d;
-
+    line-height: .2rem;
 
 }
 
-.highlow,
-.current,
-.conditions {
-    color: #427aa1;
-    align-items: center;
-    justify-content: center;
-    padding-top: .5em;
-}
 
 .current {
     font-weight: bold;
     font-size: 20px;
-    padding-top: 1.5rem;
+
 }
 
 .current img {
@@ -207,15 +194,17 @@ main h2 {
 }
 
 .franklinphoto img {
-    margin-top: 5px;
+   margin-top: 5px;
     width: 100%;
     height: auto;
     }
+
 .springfieldphoto img {
     margin-top: 5px;
     width: 100%;
     height: auto;
 }
+
 .greenvillephoto img {
     margin-top: 5px;
     width: 100%;
@@ -252,11 +241,11 @@ main article img {
     display: grid;
     grid-gap: 2px;
     grid-template-columns: 1fr;
- }
+}
 
 .galleryimages img {
     max-width: 100%;
-    
+
 }
 
 figcaption {
@@ -421,12 +410,11 @@ input[type=range]:focus::-ms-fill-upper {
 /*-----------INDEX-------------*/
 
 .grid-container {
-    display: grid;
+    display: grid; 
     grid-template-rows: 1fr;
     max-width: 100%;
-
+ 
 }
-
 .grid-container img {
     max-width: 100%;
     max-height: auto;
@@ -434,37 +422,29 @@ input[type=range]:focus::-ms-fill-upper {
     border: 2px solid indianred;
     height: auto;
     box-shadow: 5px 5px 10px gray;
-
+    
 }
-
 .grid-container h2 {
     text-align: center;
+    padding-bottom: 1rem;
 }
-
 .weather-story {
     margin: 0 1rem .25rem;
     text-align: center;
 }
 
-.franklin-data,
-.greenville-data,
-.springfield-data {
-    margin-left: .5rem;
-    margin-right: .5rem;
+.franklin-data, .greenville-data, .springfield-data {
+    margin: auto;
     font-size: 100%;
     text-align: center;
     line-height: 4pt;
 
 }
-
-.motto,
-.founded,
-.pop,
-.rain {
+.motto, .founded, .pop, .rain {
     color: indianred;
     font-weight: bold;
 }
-
+ 
 
 .footer-bar a:link {
     color: #f6ae2d

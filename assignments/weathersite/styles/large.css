@@ -21,6 +21,7 @@
         box-shadow: 3px 3px 3px #bbb;
 
     }
+    
     .greenvillephoto img {
         width: 100%;
         margin: 15px auto;
@@ -48,16 +49,6 @@
         border: 3px solid #f6ae2d;
     }
 
-    .highlow,
-    .current,
-    .conditions {
-        color: #427aa1;
-        align-items: center;
-        justify-content: center;
-        padding-top: .5em;
-        margin: auto;
-        font-size: 22px;
-    }
     main article img {
         width: 50%;
         float: right;
@@ -87,6 +78,7 @@
         grid-auto-flow: dense;
         grid-gap: .25rem;
         justify-items: center;
+        
 
     }
     .index-sky {
@@ -97,11 +89,12 @@
     }
 
     .grid-container img {
-        max-width: 100%;
+        max-width: 94%;
         max-height: auto;
         border: 2px solid indianred;
         height: auto;
         box-shadow: 5px 5px 10px gray;
+        
 
     }
 
@@ -112,7 +105,8 @@
 
     }
     .weather-story {
-        margin: 3rem 2rem .25rem -7rem;
+        margin: 0;
+        padding: 0 .2rem 0 0;
         text-align: left;
     }
 
@@ -121,9 +115,12 @@
     .springfield-data {
         grid-row: 2;
         background-color: #E6F3F7;
-        padding: 0 4rem;
+        margin: auto;
+        padding-left: 34px;
+        padding-right: 34px;
         margin-top: 1rem;
         border: 2px solid #f6ae2d;
+    
 
 
 
