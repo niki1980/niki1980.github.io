@@ -42,66 +42,69 @@
     </nav>
 
     <main>
-        <h2>Tri-City Weather Story</h2>
-        <div class="grid-container">
-            
-            <figure class="index-sky">
-             <img src="images/sky.jpg" alt="blue sky and clouds with sun rays shining through">
-            </figure>
-            <div class="weather-story">
-               
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum placerat facilisis. In vitae dictum neque. Maecenas non tortor ipsum. Vivamus orci turpis, pellentesque bibendum vestibulum non, fringilla nec nisl. Aenean sagittis blandit neque, finibus venenatis ipsum placerat vel. Cras nec cursus est. Mauris eu eleifend tortor, non ultrices velit. Quisque vehicula sagittis magna, eget rutrum mauris viverra quis. Pellentesque nulla neque, volutpat id erat ut, scelerisque sagittis dui. Aenean sagittis blandit neque, finibus venenatis ipsum placerat vel. Cras nec cursus est. Mauris eu eleifend tortor, non ultrices velit. Quisque vehicula sagittis magna, eget rutrum mauris viverra quis. Pellentesque nulla neque, volutpat id erat ut, scelerisque sagittis dui.</p>
-            </div>
-            <figure class="frank-img">
-             <img src="images/franklin-index.jpg" alt="landscape of Franklin city">
-            </figure>
-            <div class="franklin-data">
-                <h2>Franklin</h2>
-                <p class="motto">Town Motto:</p>
-                <p><span id="frank-motto"></span></p><br>
-                <p class="founded">Year Founded:</p>
-                <p><span id="frank-founded"></span></p><br>
-                <p class="pop">Population:</p>
-                <p><span id="frank-pop"></span></p><br>
-                <p class="rain">Annual rainfall in inches:</p>
-                <p><span id="frank-rain"></span></p>
-            </div>
-
-
-            <figure class="green-img">
-            <img src="images/greenville.jpg" alt="hiker sitting at lake on breezy sunny day">
-             </figure>
-                <div class="greenville-data">
-                <h2>Greenville</h2>
-                <p class="motto">Town Motto:</p>
-                <p><span id="green-motto"></span></p><br>
-                <p class="founded">Year Founded:</p>
-                <p><span id="green-founded"></span></p><br>
-                <p class="pop">Population:</p>
-                <p><span id="green-pop"></span></p><br>
-                <p class="rain">Annual rainfall in inches:</p>
-                <p><span id="green-rain"></span></p>
-            </div>
-
-
-
-            <figure class="spring-img">
-            <img src="images/springfield.b.jpg" alt="geese on the shore of a lake on a sunny day">
-                </figure>
-            <div class="springfield-data">
-                <h2>Springfield</h2>
-                <p class="motto">Town Motto:</p>
-                <p><span id="spring-motto"></span></p><br>
-                <p class="founded">Year Founded:</p>
-                <p><span id="spring-founded"></span></p><br>
-                <p class="pop">Population:</p>
-                <p><span id="spring-pop"></span></p><br>
-                <p class="rain">Annual rainfall in inches:</p>
-                <p><span id="spring-rain"></span></p>
-            </div>
-
+        <div class="town-row" id="weather-story">
+            <article class="town-data">
+                <h2>Weather Story</h2>
+                <p id="story">Gentle breezes and cloudy skies this past weekend made for perfect kite-flying conditions. Residents in the Tri-Cities took to city parks to bike, play ball, fly kites, and enjoy amazing weather through various activities. Beautiful weather is expected for the next month, so plan for city streets, parks, and other public areas to be a bit more crowded than usual.</p>
+            </article>
+            <picture class="town-photos">
+                <img src="images/sky.jpg" alt="blue sky and clouds with sun rays shining through">
+            </picture>
         </div>
-        
+        <div class="tri-towns">
+            <div class="town">
+                <article class="town-data">
+                    <h2>Franklin</h2>
+                    <p class="motto">Town Motto:</p>
+                    <p><span id="frank-motto"></span></p><br>
+                    <p class="founded">Year Founded:</p>
+                    <p><span id="frank-founded"></span></p><br>
+                    <p class="pop">Population:</p>
+                    <p><span id="frank-pop"></span></p><br>
+                    <p class="rain">Annual rainfall:</p>
+                    <p><span id="frank-rain"></span>&quot;</p>
+                </article>
+                <picture class="town-photos">
+                    <img src="images/franklin-index.jpg" alt="landscape of Franklin city">
+                </picture>
+            </div>
+
+            <div class="town-row" id="greenville-data">
+                <article class="town-data">
+                    <h2>Greenville</h2>
+                    <p class="motto">Town Motto:</p>
+                    <p><span id="green-motto"></span></p><br>
+                    <p class="founded">Year Founded:</p>
+                    <p><span id="green-founded"></span></p><br>
+                    <p class="pop">Population:</p>
+                    <p><span id="green-pop"></span></p><br>
+                    <p class="rain">Annual rainfall:</p>
+                    <p><span id="green-rain"></span>&quot;</p>
+                </article>
+                <picture class="town-photos">
+                    <img src="images/greenville.jpg" alt="hiker sitting at lake on breezy sunny day">
+                </picture>
+            </div>
+
+            <div class="town">
+                <article class="town-data">
+                    <h2>Springfield</h2>
+                    <p class="motto">Town Motto:</p>
+                    <p><span id="spring-motto"></span></p><br>
+                    <p class="founded">Year Founded:</p>
+                    <p><span id="spring-founded"></span></p><br>
+                    <p class="pop">Population:</p>
+                    <p><span id="spring-pop"></span></p><br>
+                    <p class="rain">Annual rainfall:</p>
+                    <p><span id="spring-rain"></span>&quot;</p>
+                </article>
+            
+            <picture class="town-photos">
+                <img src="images/springfield.b.jpg" alt="geese on the shore of a lake on a sunny day">
+            </picture>
+        </div>
+        </div>
+
     </main>
     <footer class="clearfix">
         <p class="contact">

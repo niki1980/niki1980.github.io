@@ -1,0 +1,153 @@
+@media only screen and (min-width: 37.5em) {
+  
+  nav button { display: none; } 
+  
+  .hide {
+    display: block;
+  }
+  
+  nav ul#primaryNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  nav ul li {
+    flex: auto;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.25rem;
+  }
+  
+  header .subheading {
+    font-size: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.65rem;
+  }
+  
+  .weather-summary {
+    margin-left: 10%;
+    padding-bottom: 2%;
+  }
+  
+  .weather-summary div {
+    font-size: 18px; 
+  }
+  
+  .forecast {
+    display: flex; 
+    flex-flow: row wrap;
+    margin: 3rem 0;
+    padding: .75rem;
+    border: 2px solid #26333E;
+    background: linear-gradient(to bottom, #D56B35 0%, #BA5128 100%);
+    color: #26333E;
+  }
+  
+  .forecast h3 {
+    flex: auto;
+    color: #FBFBFB;
+    padding: .75rem;
+  }
+  
+  tr {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #FBFBFB;
+  }
+  
+  th {
+    width: 54rem;
+    font-size: 14px;
+    padding: .45rem;
+    background-color: #FBFBFB;
+    border: 2px solid #26333E;
+    }
+  
+  td {
+    padding: .45rem;
+    border: 2px solid #26333E;
+  }
+  
+  article img {
+    max-width: 60%;
+    float: left;
+    margin-right: 1rem; 
+  }
+  
+  article img {
+    margin-bottom: .2rem;
+  }
+  
+  
+  /* ------- Home page medium -------*/
+  
+  
+ div.town {
+   display: flex;
+   justify-content: space-between;
+   align-content: center;
+  }
+  
+  #weather-story article {
+    font-size: 1rem;
+    padding-top: 2rem;
+  }
+  
+  article.towndata {
+    width: 50%;
+    padding: 2rem 1rem 1rem 1rem;
+    font-size: 1.05rem;
+    text-align: center;
+    margin-right: 1rem;
+    flex: 1 1 100%;
+  }
+  
+  picture.townimg {
+    width: 90%;
+    flex: 1 1 100%;
+  }
+  
+  #weather-story article, #greenville article {
+  margin-left: 1rem;
+  margin-right: 0;
+  }
+  
+  .towndata > h2 {
+    text-align: center;
+  }
+  
+  #wstoryp {
+    text-align: left;
+  }
+  
+  div.reverse {
+    flex-direction: row-reverse;
+  } 
+  
+  /* Grid CSS */
+  
+  
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  
+  /* Thank you form*/
+  
+  p.center {
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+  }
+
+  
+}

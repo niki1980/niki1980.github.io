@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Franklin &dash; Weather Forecasts &amp; Conditions &vert; Tri-City Weather Reporter</title>
+    <meta name="description" content="Weather related information, forecasts, and conditions for the City of Franklin in the greater Tri-City area.">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">  
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css"> 
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="images/logo-z.png" alt="Logo for Tri-City Weather Reporter."></a>
+      </div>
+      <div class="title">
+        <h1>Tri-City Weather Reporter</h1>
+        <div class="subheading">Forecasting You Can Count On</div>
+      </div>
+    </header>
+    <nav>
+      <button type="button" onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="franklin.html">Franklin</a></li>
+        <li><a href="greenville.html">Greenville</a></li>
+        <li><a href="springfield.html">Springfield</a></li>
+        <li><a href="stormcenter.html">Storm Center</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>		
+    </nav>
+    <main>
+      <h2>Franklin</h2>
+      <picture>
+        <img src="images/franklin.jpg" alt="Image of downtown Franklin with view of the water fountain"
+          sizes="100vw" 
+          srcset="images/franklin-400x139.jpg 410w,
+                  images/franklin-600x208.jpg 620w,
+                  images/franklin-840x291.jpg 840w">
+      </picture>
+      <div class="weather-report">
+        <section class="weather-summary">
+          <h3>Partly Cloudy</h3>  
+          <p><img src="icon" id="weatherimage" alt="weather icon"></p>
+          <div class="highlow">
+            <p>High: <span id="hightemp">89</span>&deg; &#124;</p> 
+            <p id="low"> Low: <span id="lowtemp">67</span>&deg;</p> 
+          </div>
+          <div class="conditions">
+            <p>Temperature: <span id="current-temp"></span>&deg; F</p>
+            <p>Conditions: <span id="current-conditions"></span></p>
+            <p>Precipitation: 0&quot;</p>  
+            <p>Wind Speed: <span id="wind">0</span> mph</p>
+          </div>           
+        </section>
+        <figure>
+          <img src="images/clouds.png" alt="Rain cloud weather icon">
+        </figure>
+        <section class="forecast">
+          <h3>Ten Day Forecast</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Day 1</th>
+                <th>Day 2</th>
+                <th>Day 3</th>
+                <th>Day 4</th>
+                <th>Day 5</th>
+                <th>Day 6</th>
+                <th>Day 7</th>
+                <th>Day 8</th>
+                <th>Day 9</th>
+                <th>Day 10</th>
+              </tr>
+	        </thead>
+            <tbody>  
+              <tr>
+                <td>89&deg;F</td>
+                <td>87&deg;F</td>
+                <td>78&deg;F</td>
+                <td>75&deg;F</td>
+                <td>72&deg;F</td>
+                <td>72&deg;F</td>
+                <td>79&deg;F</td>
+                <td>83&deg;F</td>
+                <td>85&deg;F</td>
+                <td>89&deg;F</td>
+              </tr>
+	       </tbody>
+          </table>
+        </section>
+      </div>
+      <article class="town">
+        <h3>When It Rains, It Pours</h3>	
+        <img src="images/clouds.jpg" alt="Heavy rain clouds moving in from the Pacific">
+        <p class="town-article">April showers have been extended this year, due to a series of heavy rains storms, which are expected to roll in from the Pacific by nightfall. The total rainfall for the City of Franklin is expected to be between 3-4 inches over the next 36 hours. The citizens of Franklin are busy preparing for the worst, yet still optimistically hoping for the best. Flooding is expected in many of the low lying areas, but the city of Franklin has sent out five city work crews to assist local citizens who have been setting up sand bags. In addition, city workers are warning those in the cities most vulnerable neighborhoods to take precautionary measures. Local churches are also offering their assistance to those in need. More volunteers are needed to help sandbag homes and businesses in the Beaver Creek area before the storm approaches. The mayor has urged city residents to take appropriate safety precautions and to be prepared with adequate food, water, and emergency supplies. To find out how you can help or to learn more about the city's safety guidelines, visit the <em class="article-link"><a href="#">City of Franklin</a></em> website.
+        </p>
+      </article>
+    </main>
+    <footer>
+      <section class="contact">
+        <h3>Contact Information</h3>
+        <p>
+        Tri-City Weather Reporter<br>
+        444-404-4040<br>
+        13579 Center St. Franklin, PC 99001<br>
+        Tri-CityWeatherReporter@weather.com<br>
+        <a href="https://www.google.com/maps/place/Franklin,+MI+48025/">Google Map</a>
+        </p>
+      </section>
+      <div id="copy" class="footer-bar">&copy;2018 &#124; All Rights Reserved &#124; Tri-City Weather Reporter &#124; <span id="currentdate"></span>
+        <p class="footer-bar">Weather data obtained courtesy of <br><em class="footer-link"><a href="https://openweathermap.org/">Open Weather Map</a></em></p>
+      </div>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/franklin-weather.js"></script>
+    <script src="scripts/wayfinding.js"></script>
+  </body>
+</html>

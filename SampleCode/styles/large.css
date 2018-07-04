@@ -1,0 +1,107 @@
+@media only screen and (min-width: 64em) {
+    
+  header h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  header .subheading {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 1.85rem;
+  }
+  
+  .weather-summary div {
+    font-size: 21px; 
+  }
+  
+  article img {
+    margin-bottom: .5rem;
+  }
+  
+  tr, th {
+    font-size: 1rem;
+  }
+    
+  
+  /*-------- Home Large --------*/
+  
+  
+  #weather-story {
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    border: 2px solid #26333E;
+  }
+  
+  .townsections div.town {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: .75rem;
+    width: 32%;
+    border: 2px solid #26333E;
+  }
+  
+  div.townsections {
+    flex-flow: row nowrap;
+    justify-content: space-between;  
+  }
+  
+  .townsections .towndata {
+   border: none;
+   background-color: #FBFBFB;
+  }
+  
+  #weather-story article {
+    padding-left: 1rem;
+  }
+  
+  .townsections h2 {
+    font-size: 1.45rem;
+  }
+  
+  .townsections p {
+    font-size: .9rem;
+  }
+  
+  #Franklin-motto, #Greenville-motto, #Springfield-motto {
+    font-size: 1rem;
+  }
+  
+  .townsections article.towndata, #greenville article.towndata {
+    margin: 0;
+    width: 100%;
+  }
+  
+  
+  /* ------- Grid CSS ------- */
+  
+  
+  .gallery {
+    margin-bottom: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  
+  .gallery figure:hover {
+     box-shadow: 6px 6px 16px #909199;
+  }
+  
+  p.center {
+    margin-bottom: 3.5rem;
+    font-size: 1.5rem;
+  }
+  
+  form label.radio {
+    padding: .35rem;
+  }
+  
+}

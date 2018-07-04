@@ -1,7 +1,6 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 body {
@@ -10,90 +9,59 @@ body {
     font-weight: 400;
 }
 
+/*------------- HEADER, FOOTER, NAV --------------*/
+
 header {
+    background-color: #164f78;
+    color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #164f78;
-    color: #fff;
-    flex-flow: row;
-    padding: 1rem;
+    padding: 1em;
 }
 
 header,
 nav,
 main,
 footer {
-
     max-width: 960px;
     margin: 0 auto;
 
 }
 
-.contact {
-    background-color: #427aa1;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin-bottom: 0;
-    font-size: 14px;
+.logo {
+    flex: 0 1 128px;
+    margin: auto;
+    padding-right: 1.2em;
+
 }
 
-.footer-bar {
-    background-color: #164f78;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    margin: 0;
-    font-size: 12px;
+.logo img {
+    width: 100%;
 }
 
 
 header h1 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-}
+    font-size: 2em;
+    margin-bottom: .2em;
+    text-align: center;
 
-.logo {
-    flex: 0 1 128px;
-    margin: auto;
-    padding: 1rem;
-    padding-right: 1rem;
-}
-
-.logo img {
-    width: 100px;
 }
 
 .headertext {
     display: flex;
     flex: auto;
-    flex-flow: column;
-    text-align: left;
-
-    font-size: 1rem;
-
-
+    flex-direction: column;
+    justify-content: center;
 }
+
 
 .subheading {
-    display: flex;
-    flex: auto;
-    flex-flow: column;
-    text-align: left;
-    margin-bottom: .5em;
-    margin-top: .2em;
-    margin-left: .1rem;
-    font-size: 1rem;
+    font-size: 1.3em;
     color: indianred;
-}
+    text-align: center;
 
+}
 
 nav {
     background-color: #427aa1;
@@ -112,7 +80,6 @@ nav button {
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 
 }
@@ -125,14 +92,15 @@ nav ul li a {
     display: block;
     color: #fff;
     text-align: center;
-    padding: .75rem;
+    padding: .5em;
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1.4em;
 }
 
 nav ul li.active a {
-    background-color: gray;
-    }
+    background-color: grey;
+
+}
 
 nav ul li a:hover {
     background-color: #f6ae2d;
@@ -143,90 +111,146 @@ nav ul.hide {
     display: none;
 }
 
-main {
-    color: dimgray
+.contact {
+    background-color: #427aa1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-bottom: 0;
+    font-size: 1.2em;
 }
 
-main h2,
-h3 {
-    color: #427aa1;
-    text-align: center;
-}
-
-main h2,
-h3 {
-    text-align: center;
-    padding-bottom: .75rem;
-    padding-top: .5rem;
-}
-
-main h2 {
-    padding: 1.2rem;
-    padding-bottom: 0;
-}
-
-.weather-summary {
-    display: grid;
-    text-align: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    background: #E6F3F7;
-    margin: 0 .75rem;
-    border: 3px solid #f6ae2d;
-    line-height: .2rem;
-
-}
-
-
-.current {
-    font-weight: bold;
-    font-size: 20px;
-
-}
-
-.current img {
-    width: 90px;
-    height: auto;
-}
-
-.town-article {
-    padding: 1.2rem;
-}
-
-.franklinphoto img {
-   margin-top: 5px;
-    width: 100%;
-    height: auto;
-    }
-
-.springfieldphoto img {
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
-}
-
-.greenvillephoto img {
-    margin-top: 5px;
-    width: 100%;
-    height: auto;
-}
-
-main article {
-    padding: .25rem;
-}
-
-main article img {
-    width: 95%;
-    height: auto;
-    margin-left: .5rem;
-
-
+.footer-bar {
+    background-color: #164f78;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: 1em;
 }
 
 .contact {
     text-align: center;
 }
 
+
+/*-------------Main--------------*/
+
+main {
+    color: dimgray;
+}
+
+main h2,
+h3 {
+    color: #427aa1;
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: .75em;
+}
+
+main h2 {
+    font-size: 1.8em;
+}
+
+main h3 {
+    font-size: 1.5em;
+}
+
+.weather-summary {
+    margin: 1em 1em 1.7em;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding: 1em;
+    font-size: 1.3em;
+
+}
+
+main .weather-summary {
+    background-color: #E6F3F7;
+    border: 3px solid #f6ae2d;
+}
+
+.highlow,
+.current,
+.conditions {
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+}
+
+.current {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.current img {
+    width: 5em;
+    height: auto;
+    margin-bottom: -.75em;
+}
+
+.town-article {
+    padding: 1.2em;
+}
+
+
+main figure.franklinphoto {
+    max-width: 100%;
+    margin: 1.2em;
+}
+
+main figure.franklinphoto img {
+    width: 100%;
+    margin-bottom: 1em;
+    border: 3px solid indianred;
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+main figure.greenvillephoto {
+    max-width: 100%;
+    margin: 1.2em;
+}
+
+main figure.greenvillephoto img {
+    width: 100%;
+    margin-bottom: 1em;
+    border: 3px solid indianred;
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+main figure.springfieldphoto {
+    max-width: 100%;
+    margin: 1.2em;
+}
+
+main figure.springfieldphoto img {
+    width: 100%;
+    margin-bottom: 1em;
+    border: 3px solid indianred;
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+main article img {
+    max-width: 92%;
+    margin: 1rem 1.2rem;
+    border: 3px solid indianred;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.town-article {
+    font-size: 1.2em;
+    text-align: center;
+}
 
 .forecast {
     display: none;
@@ -238,106 +262,107 @@ main article img {
 
 .galleryimages {
     display: grid;
-    grid-gap: 2px;
     grid-template-columns: 1fr;
+    margin: 1.2em;
 }
 
 .galleryimages img {
     max-width: 100%;
-
 }
 
 figcaption {
-    max-width: 100%;
-    margin-top: 4px;
-    padding: 5px;
-    font-size: 80%;
+    margin-top: .25em;
+    margin-bottom: 1em;
     text-align: center;
+      font-size: 1.2em;
 
 }
 
 /*----------------FORM--------------*/
 
 form {
-    padding: .5rem;
+    padding: 1em;
 }
 
 form h1 {
-    margin-top: 3rem;
-    padding-bottom: 1rem;
+    margin-top: 3em;
+    padding-bottom: 1em;
 
 }
 
 form label {
-    padding: .5rem;
+    padding: 1em;
 }
 
 form fieldset {
-    margin: 2rem 0;
+    margin: 2em 0;
     border: 3px solid #f6ae2d;
     border-radius: 10px;
-    padding: .54em 2%;
+    padding: 1em;
 
 }
 
 form legend {
     color: #427aa1;
-    margin: 0 1rem;
-    padding: 0 .5rem;
-    font-size: 1.5rem;
+    margin: 0 .5em;
+    padding: 0 .5em;
+    font-size: 1.75em;
+    background-color: white;
 }
 
 form label.entry {
     display: block;
-    padding: .75rem;
+    padding: .75em;
     color: indianred;
-    font-size: 1.2rem;
+    font-size: 1.3em;
 }
 
 form label.entry input,
 form label.entry select {
     -webkit-appearance: none;
     display: block;
-    font-size: 1rem;
+    font-size: 1em;
     border: solid 1px #999;
     border-radius: 4px;
-    padding: .75rem;
+    padding: .75em;
     color: #555;
     width: 100%;
-    max-width: 20rem;
+    max-width: 20em;
     background-color: #E6F3F7;
-}
-
-form label.danger1 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: indianred;
 }
 
 form label.report {
     display: block;
-    padding: .75rem;
+    padding: .5em;
     color: indianred;
-    font-size: 1.2rem;
+    font-size: 1.3em;
+    margin: 1.5em .5em 0;
+}
+
+form label.danger1 {
+    display: block;
+    padding: 1em .75em;
+    color: indianred;
+    font-size: 1.5em;
+    font-weight: bold;
+
 }
 
 form label.danger {
-    display: block;
-    padding: .75rem;
-    color: #555;
-
+    font-size: 1.2em;
+    
 }
 
 form input.submitBtn {
     border: none;
     background-color: #427aa1;
     color: white;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 0 0 2rem 2%;
+    border-radius: 1em;
+    padding: .75em 1.5em;
+    margin: 0 0 2em 2%;
     width: 96%;
-    max-width: 20rem;
-    font-size: 1.2rem;
+    max-width: 40em;
+    font-size: 1.2em;
 }
 
 form label.entry input:required {
@@ -408,43 +433,87 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*-----------INDEX-------------*/
 
-.grid-container {
-    display: grid; 
+/*.grid-container {
+    display: grid;
     grid-template-rows: 1fr;
     max-width: 100%;
- 
+
 }
+
 .grid-container img {
     max-width: 100%;
     max-height: auto;
-    margin: .25rem;
-    border: 2px solid indianred;
+    margin: 1.2em;
+    border: 3px solid indianred;
     height: auto;
     box-shadow: 5px 5px 10px gray;
-    
-}
-.grid-container h2 {
-    text-align: center;
-    padding-bottom: 1rem;
-}
-.weather-story {
-    margin: 0 1rem .25rem;
-    text-align: center;
+
 }
 
-.franklin-data, .greenville-data, .springfield-data {
-    margin: auto;
+.grid-container h2 {
+    text-align: center;
+}
+*/
+
+.town-photos img {
+    width: 90%;
+    border: 3px solid indianred;
+    box-shadow: 5px 5px 10px gray;
+    margin: 1.2em;
+
+    
+}
+.town-data {
+    border: 3px solid #f6ae2d;
+    margin: 1em 1em;
+    text-align: center;
+    padding: 0 0 1.2em 0;
+    font-size: 1.2em;
+    line-height: 1.5em;    
+}
+
+#story {
+    font-size: 1em;
+    text-align: center;
+    padding: .8em 1em .8em;
+   
+}
+
+.franklin-data,
+.greenville-data,
+.springfield-data {
+    margin-left: .5rem;
+    margin-right: .5rem;
     font-size: 100%;
     text-align: center;
     line-height: 4pt;
 
 }
-.motto, .founded, .pop, .rain {
+
+.motto,
+.founded,
+.pop,
+.rain {
     color: indianred;
     font-weight: bold;
 }
- 
+
 
 .footer-bar a:link {
     color: #f6ae2d
 }
+
+
+/*-----STYLE GUIDE---------
+
+border: 3px solid indianred;
+    box-shadow: 5px 5px 10px gray;
+
+Blue header color: #164f78
+Blue headings: #427aa1
+Orange: #f6ae2d
+Gray: #999
+Pale Blue: #E6F3F7
+Red: Indianred
+
+*/

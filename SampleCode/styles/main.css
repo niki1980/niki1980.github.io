@@ -1,0 +1,480 @@
+* { box-sizing: border-box;} 
+
+.forecast {display: none;}
+
+body {
+  font-size: 16px;
+  font-family: 'Muli', sans-serif;
+  background-color: #FBFBFB;
+  font-weight: 400;
+  color: #26333E;
+  }
+
+h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-family: Baskerville, Garamond, serif;
+  color: #26333E;
+  text-align: center;
+}
+
+header, nav, main, footer { 
+  max-width: 54rem; 
+  margin: 0 auto;
+}
+
+header {
+  background-color: #FBFBFB;
+  padding: .75rem;
+  display: flex;
+  flex-direction: row;
+}
+
+header h1 {
+  margin: 1rem 0 .5rem 0;
+  font-size: 1.75rem;
+  color: #26333E;
+  text-align: center;
+  font-family: Baskerville, Garamond, serif;
+}
+
+.title {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  flex: auto;
+  width: 82%;
+  height: auto;
+  padding: 1.5rem 0;
+  }
+
+header .subheading {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 2rem; 
+  text-align: center;
+  }
+
+nav {
+  background-color: #26333E;
+  text-align: right;
+}
+
+nav button {
+  margin: 1.5% .75rem 1.5% .75rem;
+  color: #FBFBFB;
+  font-size: 1.75rem; 
+  border: none;
+  background-color: #D56B35;
+  }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hide {display: none;}
+
+nav ul li {text-align: right;}
+
+nav ul li a {
+  display: block;
+  font-size: 1rem;
+  color: #FBFBFB;
+  padding: .8rem 1rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: linear-gradient(to bottom, #D56B35 0%, #BA5128 100%);
+  font-weight: 500;
+}
+
+nav ul li.active {
+  background: linear-gradient(to bottom, #909199 0%, #6B6E7A 100%);
+  color: #FBFBFB;
+}
+
+main {padding: .75rem;}
+
+h2 {
+  font-family: Baskerville, Garamond, serif;
+  margin: 1.75rem 0 .5rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #D56B35;
+}
+
+main picture img {
+  max-width: 100%;
+  height: auto;
+}
+
+.weather-report {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+main figure { 
+  flex: .95;
+  margin: 0 0 .3rem 2%; 
+  width: 96%; 
+}
+
+main figure img { 
+  width: 75%;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.weather-summary {
+  flex: 1.05;
+  padding: 5% 0 5% 0;
+  margin-left: 10%;
+}
+
+ .weather-summary h3 {
+  text-align: left;
+  margin-bottom: 1.25rem;
+}
+
+.highlow {
+  display: flex;
+  width: 100%;
+  font-weight: 600;
+}
+
+.highlow p {margin: .5rem 0 1.25rem 0;}
+
+p#low {
+  padding-left: .45rem;
+}
+
+.conditions p {margin-bottom: 1.25rem;}
+
+
+article h3 {
+  padding: .5rem .5rem 0 .5rem;
+  margin-bottom: 1rem;
+}
+
+article p {line-height: 21px;}
+
+article.town{
+  border: 2px solid #26333E;
+  padding: 1rem;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 6px 6px 16px #909199;
+}
+
+.town-article {
+  margin-top: 10px;
+  text-align: left;
+} 
+
+.article-link {font-style: normal;}
+
+article p a {
+  text-decoration: none;
+  color: #D56B35;
+}
+
+article p a:hover {
+  color: #D56B35;
+  font-weight: 700; 
+}
+
+footer h3 {
+  color: #D56B35;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  text-align: center;
+  color: #FBFBFB;
+}
+
+footer section.contact p a {
+  color: #D56B35;
+}
+ 
+footer .contact {
+  background-color: #26333E;
+  padding: 2rem 0 1rem 0;
+  line-height: 24px;
+}
+
+footer .footer-bar {
+  line-height: 24px;
+}
+
+#copy {
+  background: linear-gradient(to bottom, #909199 0%, #6B6E7A 100%);
+  padding: 1rem;
+}
+
+p.footer-bar {
+  padding-top: .25rem;
+}
+
+
+/* ------ Home page ------ */
+
+
+#weather-story article {
+  padding: 1rem;
+}
+
+article.towndata {
+  box-shadow: 5px 5px 15px #6B6E7A;
+  padding: .5rem;
+  background-color: #FBFBFB;
+  }
+
+.townimgs img {
+  width: 100%;
+  height: auto;
+  box-shadow: 6px 6px 16px #6B6E7A;
+}
+
+div.town {
+  width: 100%;
+  padding: 1rem 1rem 1rem 1rem;
+  border: 2px solid #26333E;
+  margin-bottom: 2rem;
+  background-color: #C0C0C6;
+}
+
+div#weather-story {
+  margin-top: 2rem;
+} 
+
+#Franklin-motto, #Greenville-motto, #Springfield-motto {
+  font-size: 1.15rem;
+  font-style: italic;
+  }
+
+div.townsections {
+  display: flex;
+  flex-flow: column;
+}
+
+.towndata #wstoryh {
+  text-align: center;
+}
+
+.towndata #wstoryp {
+  text-align: justify;
+}
+
+.towndata > h2 {
+  margin: 0;
+  text-align: center;
+}
+
+.towndata > p {
+  text-align: center;
+}
+
+ strong.bold {
+  font-weight: 700;
+}
+
+footer p a {
+  color: #26333E;
+}
+
+footer p a:hover {
+  font-weight: 700; 
+}
+
+
+/* ------- Grid Gallery -------- */
+
+
+.gallery {
+  display: grid;
+  text-align: center;
+}
+
+.gallery figure img {
+  padding: 2rem 0 .75rem 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 14px;
+  padding-bottom: .75rem;
+}
+
+.footer-link a {
+  font-style: normal;
+}
+
+
+/*-------- Thank you and Form ---------*/
+
+
+h2.storm {
+  margin: 2rem 0 .75rem 0;
+}
+
+p.center {
+  font-size: 1rem;
+  text-align: center;
+  margin: 0 0 2.75rem 0;
+}
+
+#margin {
+  margin-bottom: 9rem;
+}
+
+form fieldset {
+  background-color: #C0C0C6;
+  border: 2px solid #26333E;
+  border-radius: 2.5px;
+  margin-bottom: 2rem;
+  width: 100%; 
+  height: auto
+}
+
+form legend {
+  background-color: #FBFBFB;
+  font-size: 1.25rem;
+  padding: .4rem;
+  margin-bottom: .75rem;
+  border: 2px solid #26333E;
+  border-radius: 2.5px;
+  font-family:  Baskerville, Garamond, serif;
+  font-weight: 700;
+}
+
+form label.above input, form label.above select, form label.above textarea, form label.radio {
+  -webkit-appearance: none;
+  display: block;
+  padding: .75rem .2rem;
+  width: 100%;
+  max-width: 20rem;
+  margin-bottom: 1rem;
+  border: 2px solid #6B6E7A;
+  border-radius: 2.5px;
+  color: #26333E;
+}
+
+form label.above input, form label.above select {
+  padding-left: .5rem;
+  height: 3rem;
+}
+
+#ratingvalue {
+  margin: 0 0 .25rem .5rem;
+  padding: .25rem .5rem;
+  border: 2px solid #6B6E7A;
+  border-radius: 2.5px;
+  background-color: #FBFBFB;
+}
+
+form input#rating {
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 2.5px;
+  background: #26333E;
+  outline: none;
+  width: 100%;
+  max-width: 17.6rem;
+  margin-bottom: .25rem;
+}
+
+form input#rating::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #D56B35;
+    cursor: pointer;
+}
+
+form input#rating::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #D56B35;
+    cursor: pointer;
+}
+
+span.rate {
+  display: flex;
+  margin: 1rem 0;
+  align-items: center; 
+}
+
+div.rateSeverity {
+  margin-bottom: 1rem;
+}
+
+form label.radio {
+  margin-top: 1rem;
+  border: none;
+  color: #26333E;
+  padding: .75rem 0;
+}
+
+.radiodiv {
+  width: 100%;
+  max-width: 20rem;
+  margin-bottom: 2.25rem;  
+}
+
+.radioBtn {
+  margin: 0 .5rem 0 .75rem;
+  color: #D56B35;
+}
+
+.radiobutton {
+  width: 20rem;
+  padding-top: .75rem;
+  color: #26333E;
+  }
+
+form label.above input:required {
+  border-left: 5px solid #D56B35;
+}
+
+form label.above input:required:valid {
+  border-left: 6px solid #26333E;
+}
+
+.orange {
+  font-size: 1rem;
+  color: #D56B35;
+  font-weight: 700;
+}
+
+form label.above textarea {
+  height: 12rem;
+}
+
+form input.button {
+  background: linear-gradient(to bottom, #D56B35 0%, #BA5128 100%);
+  border: 2px solid #BA5128;
+  color: #FBFBFB;
+  padding: .75rem;
+  margin: 0 0 1rem 1rem;
+  border-radius: 2.5px;
+  width: 96%;
+  max-width: 20rem;
+}
