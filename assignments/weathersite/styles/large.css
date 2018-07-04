@@ -12,37 +12,40 @@
         box-shadow: 5px 5px 10px gray;
     }
 
-    .franklinphoto img {
+   main figure.franklinphoto img {
         width: 100%;
         height: auto;
-        float: none;
         box-shadow: 3px 3px 3px #bbb;
-
+       margin-top: 2em;
+       margin-bottom: 2em;
 
     }
 
-    .greenvillephoto img {
+   main figure.greenvillephoto img {
         width: 100%;
         height: auto;
-        float: none;
         box-shadow: 3px 3px 3px #bbb;
+       margin-top: 2em;
+       margin-bottom: 2em;
 
     }
-    .springfieldphoto img {
+    main figure.springfieldphoto img {
         width: 100%;
         height: auto;
-        float: none;
         box-shadow: 3px 3px 3px #bbb;
+        margin-top: 2em;
+        margin-bottom: 2em;
 
     }
-    .weather-summary {
+     main .weather-summary {
         display: grid;
         grid-column-gap: 0px;
         text-align: center;
+        align-items: center;
         grid-template-columns: 1fr 1fr 1fr;
         background: #E6F3F7;
         padding: .5em;
-        margin: 0 .75em;
+        margin: 0 .75em 2em;
         border: 3px solid #f6ae2d;
     }
 
