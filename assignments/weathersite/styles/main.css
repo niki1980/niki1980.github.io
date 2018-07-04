@@ -42,9 +42,10 @@ footer {
 
 
 header h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin-bottom: .2em;
     text-align: center;
+    padding-right: .5em;
 
 }
 
@@ -57,9 +58,10 @@ header h1 {
 
 
 .subheading {
-    font-size: 1.3em;
+    font-size: 1em;
     color: indianred;
     text-align: center;
+    padding-right: .5em;
 
 }
 
@@ -94,7 +96,7 @@ nav ul li a {
     text-align: center;
     padding: .5em;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 nav ul li.active a {
@@ -154,11 +156,11 @@ h3 {
 }
 
 main h2 {
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 main h3 {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 .weather-summary {
@@ -248,7 +250,7 @@ main article img {
 }
 
 .town-article {
-    font-size: 1.2em;
+    font-size: 1em;
     text-align: center;
 }
 
@@ -274,7 +276,7 @@ figcaption {
     margin-top: .25em;
     margin-bottom: 1em;
     text-align: center;
-      font-size: 1em;
+    font-size: 1em;
 
 }
 
@@ -350,7 +352,7 @@ form label.danger1 {
 
 form label.danger {
     font-size: 1.2em;
-    
+
 }
 
 form input.submitBtn {
@@ -433,50 +435,39 @@ input[type=range]:focus::-ms-fill-upper {
 
 /*-----------INDEX-------------*/
 
-/*.grid-container {
-    display: grid;
-    grid-template-rows: 1fr;
-    max-width: 100%;
-
+div .story-photo img {
+    width: 90%;
+    margin-left: 1.5em;
+  
 }
-
-.grid-container img {
-    max-width: 100%;
-    max-height: auto;
-    margin: 1.2em;
-    border: 3px solid indianred;
-    height: auto;
-    box-shadow: 5px 5px 10px gray;
-
-}
-
-.grid-container h2 {
-    text-align: center;
-}
-*/
 
 .town-photos img {
     width: 90%;
+   margin-left: 1.5em;
     border: 3px solid indianred;
     box-shadow: 5px 5px 10px gray;
-    margin: 1.2em;
+ 
 
-    
 }
+
 .town-data {
     border: 3px solid #f6ae2d;
     margin: 1em 1em;
     text-align: center;
     padding: 0 0 1.2em 0;
     font-size: 1.2em;
-    line-height: 1.5em;    
+    line-height: 1.1em;
+}
+
+.town-data h2 {
+    font-size: 1em;
 }
 
 #story {
-    font-size: 1em;
+    font-size: .9em;
     text-align: center;
     padding: 0 1em .5em;
-   
+
 }
 
 .franklin-data,
