@@ -42,7 +42,7 @@ footer {
 
 
 header h1 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: .2em;
     text-align: center;
     padding-right: .5em;
@@ -157,6 +157,7 @@ h3 {
 
 main h2 {
     font-size: 1.5em;
+   
 }
 
 main h3 {
